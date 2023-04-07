@@ -1,0 +1,168 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShoeWomanActivity">
+
+    <Button
+        android:id="@+id/bmi"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100sp"
+        android:layout_marginTop="430dp"
+        android:onClick="shosToast"
+        android:text="轉換"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        android:background="@drawable/bg_btn" />
+
+
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="95dp"
+        android:layout_marginTop="90dp"
+        android:background="@drawable/text_input_shape"
+        android:ems="10"
+        android:text="0"
+        android:inputType="number|numberDecimal"
+        />
+
+    <TextView
+        android:id="@+id/Description1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="95dp"
+        android:layout_marginTop="60dp"
+        android:text="輸入數字並選擇單位"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/Description2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="95dp"
+        android:layout_marginTop="125dp"
+        android:text="女性鞋碼尺寸 足長範圍21~26(cm)"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/tv5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="112sp"
+        android:layout_marginTop="10sp"
+        android:text="女性鞋碼轉換"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/tv4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100sp"
+        android:layout_marginTop="510sp"
+        android:text="轉換結果："
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="220sp"
+        android:layout_height="180dp"
+        android:layout_marginLeft="100sp"
+        android:layout_marginTop="540sp" />
+
+    <RadioGroup
+        android:id="@+id/Rg1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15sp"
+        android:layout_marginTop="210sp"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/cm1"
+            android:layout_width="110sp"
+            android:layout_height="32dp"
+            android:text="足長(cm)" />
+
+        <RadioButton
+            android:id="@+id/us1"
+            android:layout_width="110dp"
+            android:layout_height="32dp"
+            android:text="美國碼(US)" />
+
+        <RadioButton
+            android:id="@+id/eur1"
+            android:layout_width="110dp"
+            android:layout_height="32dp"
+            android:text="歐洲碼(EUR)" />
+
+        <RadioButton
+            android:id="@+id/jp1"
+            android:layout_width="110sp"
+            android:layout_height="32dp"
+            android:text="日本碼(JP) " />
+
+        <RadioButton
+            android:id="@+id/uk1"
+            android:layout_width="110sp"
+            android:layout_height="32sp"
+            android:text="英國碼(UK)" />
+
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/Rg2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="280dp"
+        android:layout_marginTop="210sp"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/cm2"
+            android:layout_width="110sp"
+            android:layout_height="32sp"
+            android:text="足長(cm)" />
+
+        <RadioButton
+            android:id="@+id/us2"
+            android:layout_width="110sp"
+            android:layout_height="32sp"
+            android:text="美國碼(US)" />
+
+        <RadioButton
+            android:id="@+id/eur2"
+            android:layout_width="110dp"
+            android:layout_height="32sp"
+            android:text="歐洲碼(EUR)" />
+
+        <RadioButton
+            android:id="@+id/jp2"
+            android:layout_width="110sp"
+            android:layout_height="32sp"
+            android:text="日本碼(JP)" />
+
+        <RadioButton
+            android:id="@+id/uk2"
+            android:layout_width="110sp"
+            android:layout_height="32sp"
+            android:text="英國碼(UK)" />
+
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="280dp"
+        android:text="選擇欲轉換的單位"
+        android:textSize="15dp" />
+
+</RelativeLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center_vertical">
+
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="250sp"
+        android:src="@drawable/bmi2"
+        />
+    <Button
+        android:id="@+id/home"
+        android:layout_marginTop="10sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="進入換算"
+        android:layout_below="@+id/logo"
+        android:background="@drawable/bg_btn"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        />
+    <Button
+        android:id="@+id/record"
+        android:layout_marginTop="10sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="紀錄查看"
+        android:layout_below="@+id/home"
+        android:background="@drawable/bg_btn"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="MyDatePickerDialogTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/buleGreen</item><!--背景顏色-->
+        <item name="colorControlActivated">#D1007A</item><!--選擇顏色-->
+        <!--<item name="android:selectableItemBackgroundBorderless">@color/colorPrimaryDark</item>--><!--月份左右顏色-->
+        <item name="colorControlHighlight">#4EDEE1</item><!--按住顏色-->
+    </style>
+
+</resources>

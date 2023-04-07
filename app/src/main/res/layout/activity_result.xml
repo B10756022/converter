@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <RelativeLayout
+    android:orientation="vertical"
+    tools:context=".HomeActivity"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="fill_vertical">
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:textSize="30dp"
+        android:text="日期顯示處"
+        android:layout_marginTop="10dp"
+        android:id="@+id/tvDate"/>
+
+
+
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:textSize="20dp"
+        android:text="身高顯示處"
+        android:layout_marginTop="10dp"
+        android:id="@+id/tvHeigh"
+        android:layout_below="@+id/tvDate"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:textSize="20dp"
+        android:text="體重顯示處"
+        android:layout_marginTop="10dp"
+        android:id="@+id/tvWeigh"
+        android:layout_below="@+id/tvHeigh"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:textSize="20dp"
+        android:text="BMI結果顯示處"
+        android:layout_marginTop="10dp"
+        android:id="@+id/tvBmi"
+        android:layout_below="@+id/tvWeigh"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:textSize="20dp"
+        android:text="診斷結果顯示處"
+        android:layout_marginTop="10dp"
+        android:id="@+id/tvResult"
+        android:layout_below="@+id/tvBmi"/>
+
+    <View
+        android:layout_height="fill_parent"
+        android:layout_width="0dp"
+        android:id="@+id/line"
+        android:layout_centerInParent="true"/>
+
+    <Button
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_width="100sp"
+        android:textSize="20dp"
+        android:text="刪除資料"
+        android:layout_marginTop="10sp"
+        android:id="@+id/deleteData"
+        android:background="@drawable/bg_btn"
+        android:layout_below="@+id/tvResult"
+        android:textColor="#FFFFFF"
+        android:layout_toLeftOf="@+id/line"
+        android:layout_marginRight="15sp"/>
+
+    <Button
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_width="100sp"
+        android:textSize="20dp"
+        android:text="修改資料"
+        android:layout_marginTop="10sp"
+        android:id="@+id/putData"
+        android:background="@drawable/bg_btn"
+        android:layout_below="@+id/tvResult"
+        android:textColor="#FFFFFF"
+        android:layout_toRightOf="@+id/line"
+        android:layout_marginLeft="15sp"
+        />
+
+    <EditText
+        android:layout_height="40dp"
+        android:layout_width="match_parent"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/heigh"
+        android:paddingLeft="10sp"
+        android:drawableLeft="@drawable/ic_baseline_accessibility_24"
+        android:background="@drawable/text_input_shape"
+        android:hint="請輸入身高（cm）"
+        android:inputType="number|numberDecimal"
+        android:layout_below="@+id/deleteData"
+        android:visibility="gone"/>
+
+    <EditText
+        android:layout_height="40dp"
+        android:layout_width="match_parent"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/weigh"
+        android:paddingLeft="10sp"
+        android:drawableLeft="@drawable/ic_baseline_directions_walk_24"
+        android:background="@drawable/text_input_shape"
+        android:hint="請輸入體重（kg）"
+        android:inputType="number|numberDecimal"
+        android:layout_below="@+id/heigh"
+        android:visibility="gone"/>
+
+    <Button
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_width="100sp"
+        android:textSize="20dp"
+        android:text="確定修改"
+        android:layout_marginTop="10sp"
+        android:id="@+id/sureData"
+        android:background="@drawable/bg_btn"
+        android:layout_below="@+id/weigh"
+        android:textColor="#FFFFFF"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="15sp"
+        android:visibility="gone"
+        />
+
+
+
+</RelativeLayout>

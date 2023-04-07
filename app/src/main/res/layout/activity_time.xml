@@ -1,0 +1,188 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TimeActivity">
+
+
+    <Button
+        android:id="@+id/bmi"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="430dp"
+        android:background="@drawable/bg_btn"
+        android:onClick="shosToast"
+        android:text="轉換"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"/>
+
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="95dp"
+        android:layout_marginTop="90dp"
+        android:ems="10"
+        android:background="@drawable/text_input_shape"
+        android:inputType="number|numberDecimal"
+        android:text="0"
+        />
+
+    <TextView
+        android:id="@+id/Description1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="95dp"
+        android:layout_marginTop="60dp"
+        android:text="輸入數字並選擇單位"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/Description2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="95dp"
+        android:layout_marginTop="125dp"
+        android:text="輸入時間單位可進行轉換"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/tv5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="112sp"
+        android:layout_marginTop="10sp"
+        android:text="時間單位轉換"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/tv4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100sp"
+        android:layout_marginTop="510sp"
+        android:text="轉換結果："
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="220sp"
+        android:layout_height="180dp"
+        android:layout_marginLeft="100sp"
+        android:layout_marginTop="540sp" />
+
+    <RadioGroup
+        android:id="@+id/Rg1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35sp"
+        android:layout_marginTop="160sp"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/r1"
+            android:layout_width="50sp"
+            android:layout_height="32dp"
+            android:text="秒" />
+
+        <RadioButton
+            android:id="@+id/r2"
+            android:layout_width="72sp"
+            android:layout_height="32dp"
+            android:text="分鐘" />
+
+        <RadioButton
+            android:id="@+id/r3"
+            android:layout_width="50sp"
+            android:layout_height="32dp"
+            android:text="時" />
+
+        <RadioButton
+            android:id="@+id/r4"
+            android:layout_width="50sp"
+            android:layout_height="32sp"
+            android:text="天" />
+
+        <RadioButton
+            android:id="@+id/r5"
+            android:layout_width="50sp"
+            android:layout_height="32dp"
+            android:text="週" />
+
+        <RadioButton
+            android:id="@+id/r6"
+            android:layout_width="50sp"
+            android:layout_height="32dp"
+            android:text="月" />
+
+        <RadioButton
+            android:id="@+id/r7"
+            android:layout_width="50sp"
+            android:layout_height="32dp"
+            android:text="年" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/Rg2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="300sp"
+        android:layout_marginTop="160sp"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/r8"
+            android:layout_width="50sp"
+            android:layout_height="32sp"
+            android:text="秒" />
+
+        <RadioButton
+            android:id="@+id/r9"
+            android:layout_width="72dp"
+            android:layout_height="32sp"
+            android:text="分鐘" />
+
+        <RadioButton
+            android:id="@+id/r10"
+            android:layout_width="50sp"
+            android:layout_height="32sp"
+            android:text="時" />
+
+        <RadioButton
+            android:id="@+id/r11"
+            android:layout_width="50sp"
+            android:layout_height="32sp"
+            android:text="天" />
+
+        <RadioButton
+            android:id="@+id/r12"
+            android:layout_width="50sp"
+            android:layout_height="32sp"
+            android:text="週" />
+
+        <RadioButton
+            android:id="@+id/r13"
+            android:layout_width="50sp"
+            android:layout_height="32sp"
+            android:text="月" />
+
+        <RadioButton
+            android:id="@+id/r14"
+            android:layout_width="50sp"
+            android:layout_height="32dp"
+            android:text="年" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="280dp"
+        android:text="選擇欲轉換的單位"
+        android:textSize="15dp" />
+
+</RelativeLayout>
